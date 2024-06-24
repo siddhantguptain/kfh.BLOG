@@ -1,3 +1,70 @@
+:root{
+  --bg:white;
+  --textColor:black;
+  --softbg:#f0f0f0;
+  --softTextColor:#626262;
+}
+*{
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.mainContainer{
+  min-height: 100vh;
+  background-color: var(--bg);
+  color:var(--textColor);
+}
+
+.mainWrapper{
+  max-width: 1536px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: #626262;
+  padding-left: 80px;
+  padding-right: 80px;
+
+}
+/* Responsiveness */
+@media screen and (max-width:1536px) {
+  .mainWrapper{
+    max-width: 1366px;
+  }
+}
+@media screen and (max-width:1280px) {
+  .mainWrapper{
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width:1024px) {
+  .mainWrapper{
+    max-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width:768px) {
+  .mainWrapper{
+    max-width: 640px;
+  }
+}
+@media screen and (max-width:640px) {
+  .mainWrapper{
+    max-width: 475px;
+  }
+}
+
+
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities;
