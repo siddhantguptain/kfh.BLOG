@@ -5,6 +5,8 @@ import "./globals.css";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 
+import { ThemeContextProvider } from "../context/ThemeContext";
+import ThemeProvider from "../providers/ThemeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,13 +22,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <ThemeContextProvider >
+        <ThemeProvider>
         <div className="mainContainer">
             <div className="mainWrapper">
                 <Navbar />
                   {children}
                 <Footer/>        
-            </div>   
+            </div>  
         </div>
+        </ThemeProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );
