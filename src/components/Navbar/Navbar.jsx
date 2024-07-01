@@ -7,18 +7,17 @@ import AuthLink from '../AuthLink/AuthLink'
  const Navbar = () => {
   return (
     <div className={style.container}>
-      
+        <div className={style.social}>
+      @@@@</div>
       <div className={style.logo}>Kcal for Health</div>
       <div className={style.links}>
-        
-        <Link href="/">Home</Link>
-        <Link href="/">Blog</Link>
-        <Link href="/">Fitness Calculater</Link>
+      <ThemeToggle />
+        <Link href="/" className={style.link}>Home</Link>
+        <Link href="/" className={style.link}>Blog</Link>
+        <Link href="/" className={style.link}>Fit-Cal</Link>
         <AuthLink />
       </div>
-      <div className={style.social}>
-      <ThemeToggle />
-      @@@@</div>
+   
     </div>
   )
 }
