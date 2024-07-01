@@ -20,11 +20,17 @@ a{
   text-decoration: none;
 }
 
-.light{
+.dark{
   --bg:#000000;
   --textColor:#ddd;
   --softbg:#1f273a;
   --softTextColor:#a6a6a6;
+}
+.light{
+  --bg:white;
+  --textColor:black;
+  --softbg:#f0f0f0;
+  --softTextColor:#626262;
 }
 
 .mainContainer{
